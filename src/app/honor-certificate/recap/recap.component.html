@@ -1,0 +1,115 @@
+<div class="recapitulatif">
+  <div class="step-recap">
+    <!-- Étape 1 : Informations du représentant légal -->
+    <h5>{{ steps[0] | translate}}</h5>
+    <div class="row no-gutters">
+      <div class="col s12 m6">
+      <label>{{ 'FORM.STEP1.LAST_NAME' | translate}}</label>
+      <p>{{ form.get('step1.lastName')?.value }}</p>
+    </div>
+    <div class="col s12 m6">
+      <label>{{ 'FORM.STEP1.FIRST_NAME' | translate}}</label>
+      <p>{{ form.get('step1.firstName')?.value }}</p>
+    </div>
+    </div>
+    <hr />
+    <button (click)="goToStep(1)" class="btn modify-btn">{{ 'FORM.ACTIONS.MODIFY' | translate}}</button>
+  </div>
+
+  <div class="step-recap">
+    <!-- Étape 2 : Informations supplémentaires -->
+    <h5>{{ steps[1] | translate }}</h5>
+    <div class="row no-gutters">
+      <div class="col s12">
+        <div class="row no-gutters">
+          <div class="col s3">
+            <label>{{ 'FORM.STEP2.LAST_NAME' | translate}}</label>
+            <p>{{ form.get('step2.lastName')?.value }}</p>
+          </div>
+          <div class="col s3">
+            <label>{{ 'FORM.STEP2.FIRST_NAME' | translate}}</label>
+            <p>{{ form.get('step2.firstName')?.value }}</p>
+          </div>
+          <div class="col s3">
+            <label>{{ 'FORM.STEP2.BIRTH_DATE' | translate}}</label>
+            <p>{{ form.get('step2.birthDate')?.value | date: 'dd/MM/yyyy' }}</p>
+          </div>
+          <div class="col s3">
+            <label>{{ 'FORM.STEP2.CUSTOMER_NUMBER' | translate}}</label>
+            <p>{{ form.get('step2.customerNumber')?.value }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <hr />
+  
+    <button (click)="goToStep(2)" class="btn modify-btn">{{ 'FORM.ACTIONS.MODIFY' | translate}}</button>
+  
+
+  <div class="step-recap">
+    <!-- Étape 3 : Informations du bénéficiaire -->
+    <h5>{{ steps[2] | translate }}</h5>
+    <div class="row no-gutters">
+      <!-- Première ligne -->
+      <div class="col s12">
+        <div class="row no-gutters">
+          <div class="col s2">
+            <label>{{ 'FORM.STEP3.LAST_NAME' | translate}}</label>
+            <p>{{ form.get('step3.lastName')?.value }}</p>
+          </div>
+          <div class="col s2">
+            <label>{{ 'FORM.STEP3.FIRST_NAME' | translate}}</label>
+            <p>{{ form.get('step3.firstName')?.value }}</p>
+          </div>
+          <div class="col s2">
+            <label>{{ 'FORM.STEP3.BIRTH_DATE' | translate}}</label>
+            <p>{{ form.get('step3.birthDate')?.value | date: 'dd/MM/yyyy' }}</p>
+          </div>
+          <div class="col s2">
+            <label>{{ 'FORM.STEP3.BIRTH_CITY' | translate}}</label>
+            <p>{{ form.get('step3.birthCity')?.value }}</p>
+          </div>
+          <div class="col s2">
+            <label>{{ 'FORM.STEP3.BIRTH_COUNTRY' | translate}}</label>
+            <p>{{ form.get('step3.birthCountry')?.value }}</p>
+          </div>
+        </div>
+      </div>
+      <!-- Deuxième ligne -->
+      <div class="col s12"></div>
+        <div class="row no-gutters">
+          <div class="col s3">
+            <label>{{ 'FORM.STEP3.ADDRESS' | translate}}</label>
+            <p>{{ form.get('step3.address')?.value }}</p>
+          </div>
+          <div class="col s3">
+            <label>{{ 'FORM.STEP3.POSTAL_CODE' | translate}}</label>
+            <p>{{ form.get('step3.postalCode')?.value }}</p>
+          </div>
+        <div class="col s3">
+          <label>{{ 'FORM.STEP3.CITY' | translate}}</label>
+          <p>{{ form.get('step3.city')?.value }}</p>
+        </div>
+        <div class="col s3">
+          <label>{{ 'FORM.STEP3.COUNTRY' | translate}}</label>
+          <p>{{ form.get('step3.country')?.value }}</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <button (click)="goToStep(3)" class="btn modify-btn">{{ 'FORM.ACTIONS.MODIFY' | translate}}</button>
+  </div>
+  
+  <div class="step-recap">
+    <!-- Étape 4 : Votre Situation fiscale -->
+    <h5>{{ steps[4] | translate}}</h5>
+    <div>
+      <label>{{ 'FORM.STEP4.OPTION' | translate}}</label>
+      <p>{{ form.get('step4.option')?.value | translate}}</p>
+    </div>
+  </div>
+    <hr />
+    <button (click)="goToStep(4)" class="btn modify-btn">{{ 'FORM.ACTIONS.MODIFY' | translate}}</button>
+  
+</div>

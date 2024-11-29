@@ -1,0 +1,91 @@
+<div class="container">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <ul class="breadcrumb">
+            <li [class.active]="currentStep === 0">
+              <a 
+                href="javascript:void(0)" 
+                routerLink="/profile"
+                *ngIf="currentStep > 0; else staticProfile">
+                {{ 'Profil' | translate }}
+              </a>
+              <ng-template #staticProfile>
+                <span>{{ 'Profil' | translate }}</span>
+              </ng-template>
+              <span class="breadcrumb-separator">›</span> 
+            </li>
+            <li *ngFor="let step of steps; let i = index" [class.active]="currentStep === i + 1">
+              <span *ngIf="i > 0 && i < currentStep" class="breadcrumb-separator">›</span> 
+              <a 
+                href="javascript:void(0)" 
+                (click)="goToStep(i + 1)" 
+                *ngIf="i + 1 <= currentStep">
+                {{ step | translate }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+ 
+    
+
+
+    <div class="icon-with-text" (click)="previousStep()">
+      <img src="/assets/images/return_icon.png"  class="logo">
+      <div class="text-container">
+        <span class="top-text">{{ 'FORM.TITLE' | translate }}</span>
+        <span class="bottom-text">{{ steps[currentStep - 1] | translate}}</span>
+      </div>
+    </div>
+
+    <div class="progress ">
+      <div class="determinate" [style.width.%]="progress"></div>
+    </div>
+
+    <div class="form-card">
+      <!-- Étape 1 -->
+      <div *ngIf="currentStep === 1">
+        <app-step1 [formGroup]="getStepForm(1)"></app-step1>
+      </div>
+  
+      <!-- Étape 2 -->
+      <div *ngIf="currentStep === 2">
+        <app-step2 [formGroup]="getStepForm(2)"></app-step2>
+      </div>
+
+      <div *ngIf="currentStep === 3">
+        <app-step3 [formGroup]="getStepForm(3)"
+        [selectSuggestion]="selectSuggestion.bind(this)"
+        [suggestions]="suggestions">
+        ></app-step3>
+      </div>
+
+      <div *ngIf="currentStep === 4">
+        <app-step4 [formGroup]="getStepForm(4)"
+        ></app-step4>
+      </div>
+  
+      <!-- Récapitulatif -->
+      <div *ngIf="currentStep === 5">
+        <app-recap [form]="attestationForm"
+        [goToStep]="goToStep.bind(this)"
+        [steps]="steps"
+        ></app-recap>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 right-align">
+              <button class="btn btn-large waves-effect waves-light" (click)="submit()">
+                {{ 'FORM.ACTIONS.VALIDATE' | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  
+    <!-- Boutons de navigation -->
+    <div class="navigation-buttons">
+      <button *ngIf="currentStep < 5" class="btn waves-effect waves-light teal lighten-1" (click)="nextStep()">{{ 'FORM.ACTIONS.NEXT' | translate }}</button>
+    </div>
+  </div>

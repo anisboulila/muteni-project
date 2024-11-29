@@ -1,0 +1,34 @@
+
+<div [formGroup]="formGroup" class="col s12">
+  <div class="row">
+  <!-- Champ Nom -->
+  <div class="input-field">
+    <input 
+      id="lastName" 
+      type="text" 
+      formControlName="lastName" 
+      [class.invalid]="formGroup.get('lastName')?.invalid && formGroup.get('lastName')?.touched"
+    />
+    <label for="lastName"  class="active">{{ 'FORM.STEP1.LAST_NAME' | translate }}</label>
+    <span *ngIf="formGroup.get('lastName')?.invalid && formGroup.get('lastName')?.touched" class="helper-text red-text">
+      <ng-container *ngIf="formGroup.get('lastName')?.hasError('required')">{{ 'FORM.VALIDATION.REQUIRED_FIELD' | translate }}</ng-container>
+      <ng-container *ngIf="formGroup.get('lastName')?.hasError('pattern')">{{ 'FORM.VALIDATION.PATTERN_LETTER_ERROR' | translate }}</ng-container>
+    </span>
+  </div>
+
+  <!-- Champ Prénom -->
+  <div class="input-field">
+    <input 
+      id="firstName" 
+      type="text" 
+      formControlName="firstName" 
+      [class.invalid]="formGroup.get('firstName')?.invalid && formGroup.get('firstName')?.touched"
+    />
+    <label for="firstName" class="active">{{ 'FORM.STEP1.FIRST_NAME' | translate }}</label> <!-- Ajout de la classe active -->
+    <span *ngIf="formGroup.get('firstName')?.invalid && formGroup.get('firstName')?.touched" class="helper-text red-text">
+      <ng-container *ngIf="formGroup.get('firstName')?.hasError('required')">{{ 'FORM.VALIDATION.REQUIRED_FIELD' | translate }}</ng-container>
+      <ng-container *ngIf="formGroup.get('firstName')?.hasError('pattern')">{{ 'FORM.VALIDATION.PATTERN_LETTER_ERROR' | translate }}</ng-container>
+    </span>
+  </div>
+</div>
+</div>

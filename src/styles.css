@@ -1,1 +1,105 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, app-root {
+  height: 100%;
+  margin: 0;
+}
+
+.icon-with-text {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.icon-with-text i {
+  font-size: 36px; 
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.text-container .top-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #13AA9A;
+}
+
+.text-container .bottom-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222C4A;
+}
+
+
+
+/* Par défaut, contour vert */
+.input-field input {
+  border: 2px solid #13AA9A !important; 
+  border-radius: 4px !important;
+  padding: 0px 4px !important; 
+  transition: border-color 0.3s !important; 
+  position: relative !important;
+}
+
+
+.input-field input.valid {
+  border: 2px solid #13AA9A !important;
+}
+
+
+.input-field input.invalid {
+  border: 2px solid #f44336 !important;
+}
+
+/* Le label en noir */
+.input-field label {
+  color: #222C4A !important;
+  font-weight: bold !important; 
+  margin-bottom: 8px !important;
+  position: absolute !important;
+  top: -7px !important; 
+}
+
+/* Message d'erreur en rouge */
+.input-field .helper-text {
+  color: red !important;
+  padding-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+.autocomplete-list {
+  position: absolute;
+  z-index: 1000; 
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  max-height: 200px; 
+  overflow-y: auto;
+  list-style: none;
+  padding: 0; 
+  margin: 4px 0 0; 
+  width: calc(100% - 2px); 
+}
+
+.autocomplete-list li {
+  padding: 8px 12px;
+  cursor: pointer; 
+  transition: background-color 0.2s ease;
+}
+
+.autocomplete-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.autocomplete-list li:active {
+  background-color: #e0e0e0; 
+}
+/**********************/
+

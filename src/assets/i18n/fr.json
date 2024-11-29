@@ -1,0 +1,81 @@
+{
+  "NAV": {
+    "DOCUMENTS": "Mes documents",
+    "PROFILE": "Mon profil",
+    "CONTACT": "Nous contacter",
+    "CERTIFICATE": "Attestation Honneur Representant",
+    "LOGOUT": "Déconnexion"
+  },
+  "HOME": {
+    "TITLE_BOTTOM": "À quoi sert ce formulaire ?",
+    "FIRST_PARAGRAPH": "Ce formulaire nous permet de déterminer si vous êtes bénéficiaire ou non d'un ou plusieurs contrats d'assurance vie souscrits par le défunt chez un autre assureur.",
+    "SECOND_PARAGRAPH": " Cette précision nous permettra de définir l'abattement dont vous pouvez bénéficier et la fiscalité applicable en fonction de votre situation, ainsi que de vous en acquitter auprès de l'Administration fiscale.",
+    "STEP1": "Compléter le formulaire en ligne",
+    "STEP2": "Vérifier les données saisies",
+    "STEP3": "Signer électroniquement",
+    "MODAL":{
+    "TITLE": "Vos données personnelles",
+    "PARAGRAPH1": " Les informations recueillies au moyen de ce document sont nécessaires à l'Assureur pour régler le capital décès dont vous êtes bénéficiaire, et satisfaire à ses obligations légales.",
+    "PARAGRAPH2": "Vous bénéficiez de différents droits sur vos données à caractère personnel (droit d'accès, de rectification, d'opposition...).Pour en savoir plus, vous pouvez vous rendre à l'adresse suivante :" ,
+    "BUTTON" : "Continuer"
+  }
+  }
+  ,
+  "SLOGAN": "L'assureur d'un monde qui change",
+  "FORM": {
+    "TITLE": "Formulaire d'attestation sur l'honneur",
+    "STEP": {
+      "LEGAL_REPRESENTATIVE_INFO": "Informations du représentant légal",
+      "DECEASED_INFO": "Informations du défunt",
+      "BENEFICIARY_INFO": "Informations du bénéficiaire",
+      "TAX_SITUATION": "Votre Situation fiscale",
+      "RECAP": "Récapitulatif"
+    },
+    "STEP1": {
+      "LAST_NAME": "Nom",
+      "FIRST_NAME": "Prénom"
+    },
+    "STEP2": {
+      "LAST_NAME": "Nom",
+      "FIRST_NAME": "Prénom",
+      "BIRTH_DATE": "Date de naissance",
+      "CUSTOMER_NUMBER": "Numéro Client",
+      "VALIDATION": {
+        "BIRTH_DATE_PATTERN": "La date de naissance doit être valide.",
+        "BIRTH_DATE_INVALID": "La date de naissance ne peut pas être dans le futur."
+      }
+    },
+    "STEP3": {
+    "LAST_NAME": "Nom",
+    "USAGE_NAME": "Nom d'usage (si différent)",
+    "FIRST_NAME": "Prénom",
+    "BIRTH_DATE": "Date de naissance",
+    "BIRTH_CITY": "Ville de naissance",
+    "BIRTH_COUNTRY": "Pays de naissance",
+    "ADDRESS": "Adresse principale",
+    "ADDRESS_DETAILS": "Complément d'adresse",
+    "POSTAL_CODE": "Code postal",
+    "CITY": "Ville",
+    "COUNTRY": "Pays"
+  },
+  "STEP4":{
+    "OPTION":  "Option Choisie" ,
+    "OPTION1" :"Situation A: A ce jour et, à ma connaissance, le/ les contrat(s)Dest/sont le(s) seul(s) contrat(s) dassurance vie de lassuré(e) défunt(e) dont je suis bénéficiaire.", 
+    "OPTION2" :"Situation B: A ce jour et, à ma connaissance, je suis également bénéficiaire dau moins un autre contrat dassurance vie de lassuré(e) défunt(e), détenu chez une autre compagnie dassurance."
+  },
+    "VALIDATION": {
+      "REQUIRED_FIELD": "Ce champ est requis",
+      "PATTERN_LETTER_ERROR": "Le champ doit contenir uniquement des lettres"
+    },
+    "ACTIONS": {
+      "NEXT": "Suivant",
+      "VALIDATE": "Valider et Envoyer",
+      "MODIFY": "Modifier"
+    },
+    "CONFIRMATION":{
+      "SUCCESS_TITLE":"Votre formulaire a bien été envoyé",
+      "SUCCESS_MESSAGE":"Nos équipes reviendront vers vous dans les plus brefs délais.",
+      "RETURN" :" Retour à l'accueil" 
+    }
+  }
+}

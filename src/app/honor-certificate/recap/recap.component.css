@@ -1,0 +1,42 @@
+
+  /* Conteneur principal */
+.recapitulatif {
+    display: block;
+    width: 100%;
+    height: auto; /* Laisse la hauteur s'adapter */
+    overflow-y: auto; /* Ajoute un défilement si nécessaire */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+
+  .row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom:-10px;
+  }
+  
+  .row.no-gutters .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .radio-label {
+    font-weight: 400; /* Rend le texte gras */
+    color: #222C4A; /* Applique la couleur noire */
+  }
+  
+  .step-recap label {
+    font-size: 14px; /* Taille légèrement plus grande */
+    font-weight: 500; /* Texte gras */
+    color: #222C4A; /* Texte noir */
+    margin-bottom: 8px; /* Espacement sous le label */
+  }
+  
+  .step-recap h5 {
+    font-size: 1.4rem; /* Ajuster la taille du texte */
+    font-weight: 600; /* Rendre le texte gras */
+    color: #13AA9A; /* Une couleur sombre élégante */
+    margin-bottom: 16px; /* Ajouter un espacement en dessous */
+    padding-bottom: 8px; /* Espacement entre le texte et la ligne */
+  }

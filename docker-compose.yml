@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  angular-app:
+    build:
+      context: . # Chemin vers votre Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80" # Redirige le port 80 du conteneur vers le port 8080 de l'hôte
+    volumes:
+      - ./dist:/usr/share/nginx/html # (optionnel) Liens symboliques pour voir les modifications sans rebuild
+    environment:
+      - NODE_ENV=production # Exemple de variable d'environnement

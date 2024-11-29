@@ -1,0 +1,87 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .steps {
+    margin-top: 30px;
+  }
+  
+  .step-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #26a69a;
+    border: 2px solid #26a69a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+  }
+  
+  .card-action {
+    margin-top: 20px;
+  }
+  
+  img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+/* Styles pour le modal personnalisé */
+.custom-modal {
+    max-height: none; /* Empêche la limitation de la hauteur */
+    overflow: hidden; /* Supprime le scroll */
+    border-radius: 10px; /* Bordures arrondies */
+  }
+  
+  .custom-modal .modal-content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-height: 80vh; /* Limite la hauteur du contenu à 80% de la hauteur de l'écran */
+    overflow-y: auto; /* Active le scroll vertical */
+  }
+  
+  .custom-modal h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #26a69a;
+    margin-bottom: 15px;
+  }
+  
+  
+  .custom-modal a:hover {
+    text-decoration: underline;
+  }
+  
+  .custom-modal .modal-footer {
+    text-align: center;
+    border-top: 1px solid #e0e0e0; /* Ligne entre contenu et footer */
+    padding-top: 10px;
+  }
+  
+  .custom-modal .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .custom-modal .close-icon i {
+    font-size: 24px;
+  }

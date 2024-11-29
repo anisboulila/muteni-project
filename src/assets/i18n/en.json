@@ -1,0 +1,82 @@
+{
+    "NAV": {
+        "DOCUMENTS": "My documents",
+        "PROFILE": "My profile",
+        "CONTACT": "Contact us",
+        "CERTIFICATE": "Certificate of Honor Representative",
+        "LOGOUT": "Logout"
+    },
+     "HOME": {
+          "TITLE_BOTTOM": "What is the purpose of this form?",
+          "FIRST_PARAGRAPH": "This form allows us to determine whether you are the beneficiary of one or more life insurance policies taken out by the deceased with another insurer.",
+          "SECOND_PARAGRAPH": "This information will help us define the tax exemption you may be entitled to and the applicable taxation based on your situation, as well as settle the amount with the Tax Administration.",
+          "STEP1": "Complete the online form",
+          "STEP2": "Verify the entered data",
+          "STEP3": "Sign electronically",
+          "MODAL": {
+            "TITLE": "Your personal data",
+            "PARAGRAPH1": "The information collected through this document is necessary for the Insurer to settle the death benefit you are entitled to and to meet its legal obligations.",
+            "PARAGRAPH2": "You have various rights regarding your personal data (right to access, rectification, opposition, etc.). For more information, you can visit the following address:",
+            "BUTTON": "Continue"
+          }
+        }
+      ,    
+    "SLOGAN": "The insurer of a changing world",
+    "FORM": {
+        "TITLE": "Certificate of Honor Form",
+        "STEP": {
+            "LEGAL_REPRESENTATIVE_INFO": "Legal Representative Information",
+            "DECEASED_INFO": "Deceased Information",
+            "BENEFICIARY_INFO": "Beneficiary Information",
+            "TAX_SITUATION": "Your Tax Situation",
+            "RECAP": "Summary"
+        },
+        "STEP1": {
+            "LAST_NAME": "Last Name",
+            "FIRST_NAME": "First Name"
+        },
+        "STEP2": {
+            "LAST_NAME": "Last Name",
+            "FIRST_NAME": "First Name",
+            "BIRTH_DATE": "Birth Date",
+            "CUSTOMER_NUMBER": "Customer Number",
+            "VALIDATION": {
+                "BIRTH_DATE_PATTERN": "Date of birth must be valid.",
+                "BIRTH_DATE_INVALID": "The date of birth cannot be in the future."
+            }
+        },
+        "STEP3": {
+            "LAST_NAME": "Last Name",
+            "USAGE_NAME": "Usage Name (if different)",
+            "FIRST_NAME": "First Name",
+            "BIRTH_DATE": "Date of Birth",
+            "BIRTH_CITY": "City of Birth",
+            "BIRTH_COUNTRY": "Country of Birth",
+            "ADDRESS": "Main Address",
+            "ADDRESS_DETAILS": "Address Details",
+            "POSTAL_CODE": "Postal Code",
+            "CITY": "City",
+            "COUNTRY": "Country"
+        },
+        "STEP4": {
+           "OPTION":  "Chosen Option" ,
+           "OPTION1": "Situation A: As of today, to the best of my knowledge, the contract(s) listed are the only life insurance contract(s) of the deceased insured of which I am the beneficiary.",
+           "OPTION2": "Situation B: As of today, to the best of my knowledge, I am also the beneficiary of at least one other life insurance contract of the deceased insured, held with another insurance company."
+            },
+        "VALIDATION": {
+            "REQUIRED_FIELD": "This field is required",
+            "PATTERN_LETTER_ERROR": "The field must contain only letters"
+        },
+        "ACTIONS": {
+            "NEXT": "Next",
+            "PREVIOUS": "Back",
+            "VALIDATE": "Validate and Submit",
+            "MODIFY": "Modify"
+        },
+        "CONFIRMATION": {
+        "SUCCESS_TITLE": "Your form has been successfully submitted",
+        "SUCCESS_MESSAGE": "Our teams will get back to you as soon as possible.",
+        "RETURN": "Return to the homepage"
+         }
+    }
+}

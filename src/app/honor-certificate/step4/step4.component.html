@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup">
+    <div *ngFor="let option of options">
+      <p>
+        <label>
+          <input type="radio" name="option" formControlName="option" [value]="option.label" />
+          <span class="radio-label">{{ option.label | translate}}</span>
+        </label>
+      </p>
+    </div>
+  </form>

@@ -1,0 +1,26 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">
+      <img src="/assets/images/logo.png" alt="BNP Paribas Cardif Logo" class="logo">
+      <span class="slogan">{{ 'SLOGAN' | translate }}</span>
+    </a>
+    <ul class="right menu-items">
+      <li><a href="#">{{ 'NAV.DOCUMENTS' | translate }}</a></li>
+      <li><a routerLink="/profile">{{ 'NAV.PROFILE' | translate }}</a></li>
+      <li><a href="#">{{ 'NAV.CONTACT' | translate }}</a></li>
+      <li><a href="#">{{ 'NAV.LOGOUT' | translate }}</a></li>    
+      <li>
+        <a class="dropdown-trigger"  data-target="dropdown1">
+          {{ selectedLanguage }} <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>    
+    </ul>
+  </div>
+</nav>
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#" (click)="switchLanguage($event,'fr')">FR</a></li>
+  <li><a href="#" (click)="switchLanguage($event,'en')">EN</a></li>
+</ul>
+

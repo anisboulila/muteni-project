@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="card">
+      <div class="card-content">
+        <div class="row">
+          <!-- Texte principal à gauche -->
+          <div class="col s12 m8">
+            <div class="icon-with-text" >
+                <img src="/assets/images/return_icon.png"  class="logo">
+                <div class="text-container">
+                  <span class="top-text">{{ 'FORM.TITLE' | translate }}</span>
+                  <span class="bottom-text">{{ 'HOME.TITLE_BOTTOM' | translate }}</span>
+                </div>
+              </div>
+              <br>
+              <p >
+                {{ 'HOME.FIRST_PARAGRAPH' | translate }}
+            </p>
+        <br>
+            <p >
+                {{ 'HOME.SECOND_PARAGRAPH' | translate }}
+            </p>
+          </div>
+
+          <!-- Image à droite -->
+          <div class="col s12 m4 center-align">
+            <img src="/assets/images/undraw_Dream_world.png" alt="Illustration d'une femme" class="responsive-img">
+          </div>
+        </div>
+
+        <!-- Étapes numérotées -->
+        <div class="row steps">
+          <div class="col s4 center-align">
+            <div class="step-number">1</div>
+            <p> {{ 'HOME.STEP1' | translate }}</p>
+          </div>
+          <div class="col s4 center-align">
+            <div class="step-number">2</div>
+            <p>{{ 'HOME.STEP2' | translate }}</p>
+          </div>
+          <div class="col s4 center-align">
+            <div class="step-number">3</div>
+            <p>{{ 'HOME.STEP3' | translate }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bouton -->
+      <div class="card-action center-align">
+        <a (click)="openModal()" class="btn waves-effect waves-light teal lighten-1">Commencer</a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div id="custom-modal" class="modal custom-modal">
+    <!-- Icone de fermeture en haut à droite -->
+    <a class="modal-close close-icon right">
+      <i class="material-icons">close</i>
+    </a>
+  
+    <!-- Contenu du modal -->
+    <div class="modal-content">
+      <h5>{{ 'HOME.MODAL.TITLE' | translate }}</h5>
+      <p>
+        {{ 'HOME.MODAL.PARAGRAPH1' | translate }}
+      </p>
+      <p>
+        {{ 'HOME.MODAL.PARAGRAPH2' | translate }} 
+        <a href="https://muteni.com" target="_blank">https://muteni.com</a>
+      </p>
+    </div>
+  
+    <!-- Footer avec bouton routerLink -->
+    <div class="modal-footer">
+      <a class="btn waves-effect waves-light teal lighten-1" [routerLink]="['/certificate']"> {{ 'HOME.MODAL.BUTTON' | translate }} </a>
+    </div>
+  </div>

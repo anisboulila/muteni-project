@@ -1,0 +1,65 @@
+<form [formGroup]="formGroup">
+  <div class="row">
+    <!-- Champ Nom -->
+    <div class="input-field col s12 m6">
+      <input
+        id="lastName"
+        type="text"
+        formControlName="lastName"
+        [class.invalid]="formGroup.get('lastName')?.invalid && formGroup.get('lastName')?.touched"
+      />
+      <label for="lastName" class="active">{{ 'FORM.STEP2.LAST_NAME' | translate }}</label>
+      <span *ngIf="formGroup.get('lastName')?.invalid && formGroup.get('lastName')?.touched" class="helper-text red-text">
+        <ng-container *ngIf="formGroup.get('lastName')?.hasError('required')">{{ 'FORM.VALIDATION.REQUIRED_FIELD' | translate }}</ng-container>
+        <ng-container *ngIf="formGroup.get('lastName')?.hasError('pattern')">{{ 'FORM.VALIDATION.PATTERN_LETTER_ERROR' | translate }}</ng-container>
+      </span>
+    </div>
+
+    <!-- Champ Prénom -->
+    <div class="input-field col s12 m6">
+      <input
+        id="firstName"
+        type="text"
+        formControlName="firstName"
+        [class.invalid]="formGroup.get('firstName')?.invalid && formGroup.get('firstName')?.touched"
+      />
+      <label for="firstName" class="active">{{ 'FORM.STEP2.FIRST_NAME' | translate }}</label>
+      <span *ngIf="formGroup.get('firstName')?.invalid && formGroup.get('firstName')?.touched" class="helper-text red-text">
+        <ng-container *ngIf="formGroup.get('firstName')?.hasError('required')">{{ 'FORM.VALIDATION.REQUIRED_FIELD' | translate }}</ng-container>
+        <ng-container *ngIf="formGroup.get('firstName')?.hasError('pattern')">{{ 'FORM.VALIDATION.PATTERN_LETTER_ERROR' | translate }}</ng-container>
+      </span>
+    </div>
+
+    <!-- Champ Date de naissance -->
+    <div class="input-field col s12">
+      <input
+        id="birthDate"
+        type="date"
+        formControlName="birthDate"
+        [class.invalid]="formGroup.get('birthDate')?.invalid && formGroup.get('birthDate')?.touched"
+      />
+      <label for="birthDate" class="active">{{ 'FORM.STEP2.BIRTH_DATE' | translate }}</label>
+      <span *ngIf="formGroup.get('birthDate')?.invalid && formGroup.get('birthDate')?.touched" class="helper-text red-text">
+        <ng-container *ngIf="formGroup.get('birthDate')?.hasError('required')">{{ 'FORM.VALIDATION.REQUIRED_FIELD' | translate }}</ng-container>
+        <ng-container *ngIf="formGroup.get('birthDate')?.hasError('pattern')">{{ 'FORM.STEP2.VALIDATION.BIRTH_DATE_PATTERN' | translate }}</ng-container>
+        <ng-container *ngIf="formGroup.get('birthDate')?.hasError('invalidDate')">
+          {{ 'FORM.STEP2.VALIDATION.BIRTH_DATE_INVALID' | translate }}
+        </ng-container>
+      </span>
+    </div>
+
+    <div class="input-field col s12">
+      <input 
+        id="customerNumber" 
+        type="text" 
+        formControlName="customerNumber" 
+        [class.invalid]="formGroup.get('customerNumber')?.invalid && formGroup.get('customerNumber')?.touched"
+        [attr.disabled]="true" 
+      />
+      <label for="customerNumber" class="active">{{ 'FORM.STEP2.CUSTOMER_NUMBER' | translate }}</label>
+    </div>
+
+   
+
+  </div>
+</form>
