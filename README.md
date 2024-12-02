@@ -11,6 +11,46 @@ This Angular project implements a multi-step form for completing a declaration o
 - Countries Search : Rest Countries Api
 - JSON Server : Backend Mock Interactions 
 
+## Versions Stack
+### Angular CLI: 18.2.11
+
+- Node: 20.18.0
+- Package Manager: npm 10.8.2
+- OS: win32 x64
+
+## Run Project
+
+### Locally
+
+To run the project locally, execute these commands:
+
+```bash
+cd muteni-project
+npm install
+ng serve --open
+json-server --watch db.json --port 3101
+```
+
+### with docker-compose
+
+```bash
+cd muteni-project
+docker-compose up --build
+```
+
+This command will:
+- Build the Docker image for muteni-bank project.
+- Start the container.
+- The application will be available at http://localhost:8080 in your browser and at http://localhost:3101/certificates to view the submitted form.
+
+## Features
+
+-Implement multi-step forms using Reactive Forms.
+-Style the application with MaterializeCSS for a modern UI/UX.
+-Manage parent-child communication between components effectively.
+-Validate the form inputs with dynamic and robust validation rules.
+-Implement address and country autocomplete features using external APIs.
+-Simulate backend POST requests and interactions by integrating JSON Server.
 
 ## Project ScreenShot
 
@@ -37,3 +77,5 @@ This Angular project implements a multi-step form for completing a declaration o
 
 ### Server Backend Mock 
 ![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/8.png)
+
+
