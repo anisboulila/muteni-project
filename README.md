@@ -45,12 +45,12 @@ This command will:
 
 ## Features
 
--Implement multi-step forms using Reactive Forms.
--Style the application with MaterializeCSS for a modern UI/UX.
--Manage parent-child communication between components effectively.
--Validate the form inputs with dynamic and robust validation rules.
--Implement address and country autocomplete features using external APIs.
--Simulate backend POST requests and interactions by integrating JSON Server.
+- Implement multi-step forms using Reactive Forms.
+- Style the application with MaterializeCSS for a modern UI/UX.
+- Manage parent-child communication between components effectively.
+- Validate the form inputs with dynamic and robust validation rules.
+- Implement address and country autocomplete features using external APIs.
+- Simulate backend POST requests and interactions by integrating JSON Server.
 
 ## Project ScreenShot
 
