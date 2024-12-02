@@ -1,27 +1,39 @@
 # MuteniProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+This Angular project implements a multi-step form for completing a declaration of honor for a legal representative. The form guides users through several steps to input and validate their information, culminating in a summary and confirmation step.
 
-## Development server
+## Technical Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Frontend: Angular ReactiveForms , MaterializeCss
+- Language: TypeScript
+- Translations: ngx-translate
+- Address Search Autocomplete : Nominatim OpenStreetMap API (OSP)
+- Countries Search : Rest Countries Api
+- JSON Server : Backend Mock Interactions 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project ScreenShot
 
-## Build
+### Form Introduction
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/1.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Modal Accept Conditions
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/2.png)
 
-## Running unit tests
+### Step 1 : Legal representative information
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/3.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Step 2 : The deceased Information
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/4.png)
 
-## Running end-to-end tests
+### Step 3 : Beneficiary information
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/5.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Summary All Steps
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/6.png)
 
-## Further help
+### Confirmation Form Submit
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/7.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Server Backend Mock 
+![Screenshot](https://github.com/anisboulila/muteni-project/blob/develop/src/assets/screenshots/8.png)

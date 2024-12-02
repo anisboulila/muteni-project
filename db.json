@@ -1,0 +1,116 @@
+{
+  "certificates": [
+    {
+      "id": "33fe",
+      "step1": {
+        "lastName": "dd",
+        "firstName": "dd"
+      },
+      "step2": {
+        "lastName": "dd",
+        "firstName": "dd",
+        "birthDate": "2024-11-29"
+      },
+      "step3": {
+        "lastName": "d",
+        "usageName": "",
+        "firstName": "ee",
+        "birthDate": "2024-11-28",
+        "birthCity": "ee",
+        "birthCountry": "Mexique",
+        "address": "Avenue Victor Hugo, Les Trèfles, Sevran, Le Raincy, Seine-Saint-Denis, Île-de-France, France métropolitaine, 93270, France",
+        "addressDetails": "e",
+        "postalCode": "93270",
+        "city": "Sevran",
+        "country": "France"
+      },
+      "step4": {
+        "option": "FORM.STEP4.OPTION1"
+      }
+    },
+    {
+      "id": "90bc",
+      "step1": {
+        "lastName": "kk",
+        "firstName": "kk"
+      },
+      "step2": {
+        "lastName": "kk",
+        "firstName": "kk",
+        "birthDate": "2024-11-30"
+      },
+      "step3": {
+        "lastName": "jj",
+        "usageName": "",
+        "firstName": "f",
+        "birthDate": "2024-11-30",
+        "birthCity": "f",
+        "birthCountry": "f",
+        "address": "Avenue Victor Hugo, Les Trèfles, Sevran, Le Raincy, Seine-Saint-Denis, Île-de-France, France métropolitaine, 93270, France",
+        "addressDetails": "f",
+        "postalCode": "93270",
+        "city": "Sevran",
+        "country": "France"
+      },
+      "step4": {
+        "option": "FORM.STEP4.OPTION1"
+      }
+    },
+    {
+      "id": "d679",
+      "step1": {
+        "lastName": "ff",
+        "firstName": "ff"
+      },
+      "step2": {
+        "lastName": "ff",
+        "firstName": "ff",
+        "birthDate": "2024-11-27"
+      },
+      "step3": {
+        "lastName": "ff",
+        "usageName": "ff",
+        "firstName": "ff",
+        "birthDate": "2024-11-26",
+        "birthCity": "sfax",
+        "birthCountry": "Tunisie",
+        "address": "Avenue Victor Hugo, Les Trèfles, Sevran, Le Raincy, Seine-Saint-Denis, Île-de-France, France métropolitaine, 93270, France",
+        "addressDetails": "ff",
+        "postalCode": "93270",
+        "city": "Sevran",
+        "country": "France"
+      },
+      "step4": {
+        "option": "FORM.STEP4.OPTION1"
+      }
+    },
+    {
+      "id": "25e7",
+      "step1": {
+        "lastName": "Ani",
+        "firstName": "Anis"
+      },
+      "step2": {
+        "lastName": "axel",
+        "firstName": "AXEL",
+        "birthDate": "2024-11-27"
+      },
+      "step3": {
+        "lastName": "Linda",
+        "usageName": "Linda",
+        "firstName": "Linda",
+        "birthDate": "2024-11-28",
+        "birthCity": "Paris",
+        "birthCountry": "France",
+        "address": "Rue de Montreuil, Quartier Sainte-Marguerite, Paris 11e Arrondissement, Paris, Île-de-France, France métropolitaine, 75011, France",
+        "addressDetails": "zz",
+        "postalCode": "75011",
+        "city": "Paris",
+        "country": "France"
+      },
+      "step4": {
+        "option": "FORM.STEP4.OPTION1"
+      }
+    }
+  ]
+}

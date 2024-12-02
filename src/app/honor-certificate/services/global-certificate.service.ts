@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { GlobalCertificate } from '../models/global-certificate';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,7 @@ import { Observable } from 'rxjs';
 export class GlobalCertificateService {
 
   private readonly apiNominatimUrl = 'https://nominatim.openstreetmap.org/search';
+  private readonly apiCertificateUrl = 'http://localhost:3101/certificates';
   constructor(private http: HttpClient) {}
 
   // Appel HTTP pour récupérer les pays
@@ -53,5 +55,9 @@ export class GlobalCertificateService {
   getSuggestions(query: string): Observable<any[]> {
     const url = `${this.apiNominatimUrl}?format=json&q=${encodeURIComponent(query)}&addressdetails=1`;
     return this.http.get<any[]>(url);
+  }
+
+  submitCertificate(data: GlobalCertificate): Observable<GlobalCertificate> {
+    return this.http.post<GlobalCertificate>(this.apiCertificateUrl, data);
   }
 }

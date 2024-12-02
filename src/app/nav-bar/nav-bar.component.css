@@ -1,7 +1,7 @@
 
 /* Style général de la barre de navigation */
 .nav-wrapper {
-  background: linear-gradient(90deg, #13AA9A, #13AA9A); /* Bleu foncé à turquoise */
+  background: linear-gradient(90deg, #222C4A, #222C4A); /* Bleu foncé à turquoise */
   padding: 0 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -55,7 +55,7 @@
 
 /* Changer la couleur de fond du dropdown */
 .dropdown-content {
-  background-color: #13AA9A !important; /* Changez cette couleur selon vos besoins */
+  background-color: #222C4A !important; /* Changez cette couleur selon vos besoins */
   border: none; /* Supprime les bordures si nécessaire */
 }
 
@@ -66,7 +66,7 @@
 
 /* Couleur de survol (hover) pour les éléments */
 .dropdown-content li:hover {
-  background-color: #222C4A !important; /* Couleur de survol */
+  background-color: #13AA9A!important; /* Couleur de survol */
 }
 
 .dropdown-content li > a:hover {

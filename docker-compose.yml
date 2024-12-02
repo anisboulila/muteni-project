@@ -1,13 +1,25 @@
-version: '3.8'
+version: "3.8"
 
 services:
   angular-app:
     build:
-      context: . # Chemin vers votre Dockerfile
-      dockerfile: Dockerfile
+      context: .
     ports:
-      - "8080:80" # Redirige le port 80 du conteneur vers le port 8080 de l'hôte
+      - "8080:80"      # Pour l'application Angular
+      - "3101:3100"    # Pour le JSON Server, exposé sur le même port local
+    networks:
+      - app-network
+
+  json-server:
+    image: clue/json-server
     volumes:
-      - ./dist:/usr/share/nginx/html # (optionnel) Liens symboliques pour voir les modifications sans rebuild
-    environment:
-      - NODE_ENV=production # Exemple de variable d'environnement
+      - ./db.json:/data/db.json
+    command: json-server --host 0.0.0.0 --watch /data/db.json --port 3100
+    ports:
+      - "3100:3100"    # Expose le port 3100 de JSON Server à l'extérieur
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

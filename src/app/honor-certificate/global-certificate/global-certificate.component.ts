@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { GlobalCertificateService } from '../services/global-certificate.service';
+import { GlobalCertificate } from '../models/global-certificate';
 
 declare const M: any;
 @Component({
@@ -158,11 +159,19 @@ export class GlobalCertificateComponent implements OnInit {
 
   submit() {
     if (this.attestationForm.valid) {
-      console.log('Formulaire soumis :', this.attestationForm.value);
-      this.router.navigate(['/confirmation']);
+      const formData: GlobalCertificate = this.attestationForm.value;
+      this.certificateService.submitCertificate(formData).subscribe(
+        (response) => {
+          console.log('Formulaire soumis avec succès :', response);
+          this.router.navigate(['/confirmation']);
+        },
+        (error) => {
+          console.error('Erreur lors de la soumission du formulaire :', error);
+        }
+      );
     }
   }
-
+  
   setCustomerNumber() {
     debugger;
     const lastName = this.attestationForm.get('step2')?.get('lastName')?.value;

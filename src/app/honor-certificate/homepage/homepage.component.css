@@ -28,6 +28,11 @@ body {
     margin: 0 auto 10px;
   }
   
+  .step-text {
+    color: #222C4A; 
+    font-weight: bold;
+  }
+
   .card-action {
     margin-top: 20px;
   }
@@ -50,7 +55,7 @@ body {
   .custom-modal .modal-content {
     padding: 20px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #222C4A;
     line-height: 1.6;
     max-height: 80vh; /* Limite la hauteur du contenu à 80% de la hauteur de l'écran */
     overflow-y: auto; /* Active le scroll vertical */
